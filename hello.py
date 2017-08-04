@@ -1,3 +1,3 @@
 xvar = ("Hello, World")
 
-print(xvar)
+print(xvar * 2)
