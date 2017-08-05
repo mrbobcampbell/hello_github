@@ -19,3 +19,4 @@ emp_1 = Employee("John", "Smith")
 
 
 print(emp_1)
+print(emp_1)
