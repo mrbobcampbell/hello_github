@@ -1,2 +1,3 @@
 # hello_github
-MacBook try at home
+My first github repository.
+
