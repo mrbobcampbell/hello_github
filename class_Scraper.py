@@ -1,5 +1,5 @@
-import urllib3.request
-from bs4 import BeautifulSoup
+import urllib.request
+from bs4 import beautifulsoup4
 
 
 class Scraper:
@@ -7,8 +7,7 @@ class Scraper:
         self.site = site
 
     def scrape(self):
-        r = urllib3.request\
-            .urlopen(self.site)
+        r = urllib.request.urlopen(self.site)
         html = r.read()
         parser = "html.parser"
         sp = BeautifulSoup(html,
