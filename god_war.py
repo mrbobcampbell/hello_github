@@ -138,5 +138,5 @@ print((statistics.mean(match_list) / len(match_list)))
 x1 = statistics.mean(match_list)
 x2 = (statistics.mean(game_list) / 26) * 100
 print(x1)
-print(x2)
+print(x2,"\n")
 print(x1 - x2, "game over")
