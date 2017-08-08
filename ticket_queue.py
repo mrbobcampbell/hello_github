@@ -25,18 +25,14 @@ class Queue:
         tix_sold = []
 
         for i in range(100):
-            pq.enqueue("person"
-                       + str(i))
+            pq.enqueue("person" + str(i))
 
         t_end = time.time()\
                 + till_show
         now = time.time()
-        while now < t_end \
-        and not pq.is_empty():
+        while now < t_end and not pq.is_empty():
             now = time.time()
-            r = random.\
-                randint(0,
-                        max_time)
+            r = random.randint(0, max_time)
             time.sleep(r)
             person = pq.dequeue()
             print(person)
