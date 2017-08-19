@@ -49,7 +49,7 @@ player2_score = 0
 tie_score = 0
 
 while god_counter < 1000:
-    while match_counter < 100:
+    while match_counter < 1000:
         while availabe_counter > 1:
             player1_card = available_deck[np.random.randint(len(available_deck))]
             available_deck.remove(player1_card)
@@ -107,7 +107,7 @@ while god_counter < 1000:
     player2_match = 0
     tie_match = 0
 
-# print(match_list)
+print(match_list)
 print("Match Recap:")
 print('Mean: ', statistics.mean(match_list))
 print('Std_dev: ', statistics.stdev(match_list))
@@ -125,18 +125,18 @@ print('Variance: ', statistics.variance(game_list))
 print('Var2: ', statistics.stdev(game_list)**2)
 print("Game count: ", len(game_list))
 
-plt.figure(100)
-num_bins = 300
-n, bins, patches = plt.hist(match_list, num_bins, facecolor='blue')
+# plt.figure(100)
+# num_bins = 300
+# n, bins, patches = plt.hist(match_list, num_bins, facecolor='blue')
 
-plt.figure(2)
-num_bins = 300
-n, bins, patches = plt.hist(game_list, num_bins, facecolor='blue')
-plt.show()
+# plt.figure(2)
+# num_bins = 300
+# n, bins, patches = plt.hist(game_list, num_bins, facecolor='blue')
+# plt.show()
 
 print((statistics.mean(match_list) / len(match_list)))
 x1 = statistics.mean(match_list)
 x2 = (statistics.mean(game_list) / 26) * 100
 print(x1)
-print(x2,"\n")
+print(x2, "\n")
 print(x1 - x2, "game over")

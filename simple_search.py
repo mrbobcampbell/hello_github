@@ -6,6 +6,7 @@ def ss(number_list, n):
             break
     return found
 
+
 numbers = range(0, 100)
 s1 = ss(numbers, 2)
 print(s1)

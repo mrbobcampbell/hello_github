@@ -125,7 +125,7 @@ class Game:
 
         win = self.winner(self.p1,
                           self.p2)
-        print("War is over {} wins"
+        print("War is over {} wins {}"
               .format(win))
 
     def winner(self, p1, p2):
@@ -138,3 +138,4 @@ class Game:
 
 game = Game()
 game.play_game()
+print(p1.wins)
