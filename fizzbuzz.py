@@ -1,3 +1,6 @@
+#! /Library/Frameworks/Python.framework/Versions/3.6/bin/python3
+
+
 def fizz_buzz():
     for i in range(1, 101):
         if i % 3 == 0 and i % 5 == 0:
@@ -8,5 +11,6 @@ def fizz_buzz():
             print("Buzz")
         else:
             print(i)
+
 
 fizz_buzz()

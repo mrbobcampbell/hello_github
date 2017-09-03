@@ -1,4 +1,5 @@
-#!/usr/bin/env python3
+#! /Library/Frameworks/Python.framework/Versions/3.6/bin/python3
+
 # -*- coding: utf-8 -*-
 """
 Created on Fri Jul 28 08:43:31 2017
